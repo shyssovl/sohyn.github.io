@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="main.css">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'pretendard', sans-serif;
+}
+
+body {
+    cursor: url("image/커서1.png"), auto;
+}
+
+/* 좌측 메뉴 */
+.menu-lyrics {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 138px;
+    /* background-color: #f8f9fa;
+    border: 1px 1px 1px 0 solid #e9ecef; */
+    margin-top: 40px;
+}
+
+.menu1-lyrics ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.menu-lyrics ul li {
+    margin-bottom: 10px;
+}
+
+.menu-lyrics ul li a {
+    color: #212529;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.menu-lyrics ul li a:hover {
+    background-color: #e42d2d;
+    color: #ffffff;
+}
+
+
+
+/* 음악 */
+#section1 {
+    margin-top: -110px;
+}
+h1 {
+    padding: 0 0 40px 0;
+    font-size: 50px;
+}
+
+.content2 {
+    text-align: center;
+}
+.content2 img {
+    border-radius: 10px;
+}
+
+
+
+/* 가사 */
+#container {
+    margin: auto;
+    padding: 50px;
+}
+
+#container ul {
+    list-style: none;
+}
+
+#container ul li {
+    font-size: 25px;
+    display: block;
+    position: relative;
+    padding: 10px 20px 0 20px;
+    line-height: 1.7;
+}
+
+#section2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hovring ul:hover li span {
+    opacity: 0.3;
+}
+
+.hovring ul li:hover span {
+    opacity: 1;
+}
+
+
+/* 텍스트 호버 시 */
+
+.text1:hover {
+    color: #000000; 
+}
+.text2:hover {
+    color: #fd6aff; 
+    font-weight: 700;
+}
+.text3:hover {
+    color: #714f64; 
+}
+.text4:hover {
+    color: #220dc6; 
+    font-style: italic;
+}
+.text5:hover {
+    color: #000000; 
+}
+.text6:hover {
+    color: #ff6f9a; 
+}
+.text7:hover {
+    color: #000000; 
+}
+.text8:hover {
+    color: #000000; 
+}
+.text9:hover {
+    color: #000000;
+    font-size: 50px;
+    font-weight: bolder; 
+}
+.text10:hover {
+    color: #ff6c6c;
+    font-style: italic;
+}
+.text11:hover {
+    color: #000000; 
+}
+.text12:hover {
+    color: #000000; 
+    font-weight: 700;
+}
+.text13:hover {
+    color: #000000; 
+}
+.text14:hover {
+    color: #000000; 
+}
+.text15:hover {
+    color: #c6f3ff; 
+    font-style: italic;
+}
+.text16:hover {
+    color: #000000; 
+    font-weight: 700;
+}
+.text17:hover {
+    color: #ff9f10; 
+}
+.text18:hover {
+    color: #000000; 
+}
+.text19:hover {
+    color: #ffd17b; 
+    font-weight: 700;
+}
+.text20:hover {
+    color: #000000; 
+}
+.text21:hover {
+    color: #c6f3ff; 
+    font-style: italic;
+}
+
+</style>
+</head>
+
+<body>
+    <header> 
+        <a href="index.html">
+            <img src="image/커서1.jpg" width="50px" alt="Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="info.html">INFO</a></li>
+                <li><a href="album.html">ALBUM</a></li>
+                <li><a href="gallery2.html">GALLETY</a></li>
+                <li><a href="lyrics.html">LYRICS</a></li>
+                <li><a href="other.html">OTHER</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="menu-lyrics">
+        <ul>
+            <li><a href="lyrics.html">EVERYTHING</a></li>
+            <li><a href="lyrics_1.html">좋아해줘</a></li>
+            <li><a href="lyrics_2.html">Antifreeze</a></li>
+            <li><a href="lyrics_3.html">한시 오분(1:05)</a></li>
+        </ul>
+    </div>
+
+<div class="content2">
+    <section id = "section1">
+        <h1>한시 오분(1:05)</h1>
+        <img id="playBtn" src="image/앨범_TEAM BABY.jpg" width="400px" alt="재생 버튼">
+        <audio id="audioPlayer">
+            <source src="audio/음원_한시오분.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+    
+
+<!--  -->
+    <section id="section2">
+        <div id="container" class="hovring">
+            <ul>
+                <li>
+                    <span class="text1">우린 아직 흑백영화처럼 사랑하고</span>
+                </li>
+                <li>
+                    <span class="text2">언제라도 쉽고 빠르게 표현하고</span>
+                </li>
+                <li>
+                    <span class="text3">맘에 없는 말은 절대 고민하지 않고</span>
+                </li>
+                <li>
+                    <span class="text4">뭔가 아쉬울 땐, 밤 지새우고</span>
+                </li>
+                <li>
+                    <span class="text5">남들이 아니라는 것도 상관없지</span>
+                </li>
+                <li>
+                    <span class="text6">우린 같은 템포, 다른 노래인 거야</span>
+                </li>
+                <li>
+                    <span class="text7">아직 더 서투르고 솔직해야 하지만</span>
+                </li>
+                <li>
+                    <span class="text8">반복에 기계처럼 계산하고 준비된 사람들</span>
+                </li>
+                <li>
+                    <span class="text9">하지만</span>
+                </li>
+                <li>
+                    <span class="text10">자기야 나는 너를 매일 다른 이유로 더 사랑했었고</span>
+                </li>
+                <li>
+                    <span class="text11">이젠 한시 오분 멈춰있는</span>
+                </li>
+                <li>
+                    <span class="text12">시계처럼 너 하나만 봐</span>
+                </li>
+                <li>
+                    <span class="text13">네가 없는 날은 어떻게든</span>
+                </li>
+                <li>
+                    <span class="text14">흘러가기만 기다려</span>
+                </li>
+                <li>
+                    <span class="text15">투명해진 날 누가 볼 수 있을까</span>
+                </li>
+                <li>
+                    <span class="text16">자기야 나는 너를 매일 다른 이유로 더 사랑했었고</span>
+                </li>
+                <li>
+                    <span class="text17">이젠 한시 오분 멈춰있는</span>
+                </li>
+                <li>
+                    <span class="text18">시계처럼 너 하나만 봐</span>
+                </li>
+                <li>
+                    <span class="text19">네가 없는 날은 어떻게든</span>
+                </li>
+                <li>
+                    <span class="text20">흘러가기만 기다려</span>
+                </li>
+                <li>
+                    <span class="text21">투명해진 날 누가 볼 수 있을까</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        Copyright ⓒ 2024 Sohyeon Jang, All Right Reserved <br>
+        고급웹퍼블리싱 직무수행능력평가1 D 22361090 장소현 ｜ shyssovl@gmail.com
+    </footer>
+
+
+
+<script>
+
+    document.getElementById('playBtn').addEventListener('click', () => {
+        let audio = document.getElementById('audioPlayer');
+        if (audio.paused) {
+            audio.play();
+            document.getElementById('playBtn').src = 'image/앨범_TEAM BABY_재생중.jpg'; // 재생 중일 때 이미지 변경
+        } else {
+            audio.pause();
+            audio.currentTime = 0;
+            document.getElementById('playBtn').src = 'image/앨범_TEAM BABY.jpg'; // 일시 정지 중일 때 이미지 변경
+        }
+    });
+        
+</script>
+    
+</body>
+</html>

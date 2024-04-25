@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="main.css">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'pretendard', sans-serif;
+}
+
+body {
+    cursor: url("image/커서1.png"), auto;
+}
+
+/* 좌측 메뉴 */
+.menu-lyrics {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 138px;
+    /* background-color: #f8f9fa;
+    border: 1px 1px 1px 0 solid #e9ecef; */
+    margin-top: 40px;
+}
+
+.menu1-lyrics ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.menu-lyrics ul li {
+    margin-bottom: 10px;
+}
+
+.menu-lyrics ul li a {
+    color: #212529;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.menu-lyrics ul li a:hover {
+    background-color: #e42d2d;
+    color: #ffffff;
+}
+
+
+
+/* 음악 */
+#section1 {
+    margin-top: -110px;
+}
+h1 {
+    padding: 0 0 40px 0;
+    font-size: 50px;
+}
+
+.content2 {
+    text-align: center;
+}
+.content2 img {
+    border-radius: 10px;
+}
+
+
+
+/* 가사 */
+#container {
+    margin: auto;
+    padding: 50px;
+}
+
+#container ul {
+    list-style: none;
+}
+
+#container ul li {
+    font-size: 25px;
+    display: block;
+    position: relative;
+    padding: 10px 20px 0 20px;
+    line-height: 1.7;
+}
+
+#section2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hovring ul:hover li span {
+    opacity: 0.3;
+}
+
+.hovring ul li:hover span {
+    opacity: 1;
+}
+
+/* 텍스트 호버 시 */
+
+.text1:hover {
+    color: #000000; 
+}
+.text2:hover {
+    color: #fd6aff; 
+    font-weight: 700;
+}
+.text3:hover {
+    color: #714f64; 
+}
+.text4:hover {
+    color: #220dc6; 
+    font-style: italic;
+}
+.text5:hover {
+    color: #000000; 
+}
+.text6:hover {
+    color: #000000; 
+}
+.text7:hover {
+    color: #000000; 
+}
+.text8:hover {
+    color: #000000; 
+}
+.text9:hover {
+    color: #000000;
+    font-size: 50px;
+    font-weight: bolder; 
+}
+.text10:hover {
+    color: #ff6c6c;
+    font-style: italic;
+}
+.text11:hover {
+    color: #000000; 
+}
+.text12:hover {
+    color: #000000; 
+}
+.text13:hover {
+    color: #478bb8; 
+}
+.text14:hover {
+    color: #000000; 
+}
+.text15:hover {
+    color: #dee760; 
+    font-style: italic;
+    font-weight: 800;
+}
+.text16:hover {
+    color: #000000; 
+    font-style: italic;
+}
+.text17:hover {
+    color: #000000; 
+}
+.text18:hover {
+    color: #000000; 
+}
+.text19:hover {
+    color: #ffaaaa; 
+    font-style: italic;
+}
+.text20:hover {
+    color: #000000; 
+}
+.text21:hover {
+    color: #000000; 
+    font-style: italic;
+}
+.text22:hover {
+    color: #000000; 
+}
+.text23:hover {
+    color: #000000; 
+}
+.text24:hover {
+    color: #4d6eff; 
+    font-style: italic;
+}
+
+</style>
+</head>
+
+<body>
+    <header> 
+        <a href="index.html">
+            <img src="image/커서1.jpg" width="50px" alt="Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="info.html">INFO</a></li>
+                <li><a href="album.html">ALBUM</a></li>
+                <li><a href="gallery2.html">GALLETY</a></li>
+                <li><a href="lyrics.html">LYRICS</a></li>
+                <li><a href="other.html">OTHER</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="menu-lyrics">
+        <ul>
+            <li><a href="lyrics.html">EVERYTHING</a></li>
+            <li><a href="lyrics_1.html">좋아해줘</a></li>
+            <li><a href="lyrics_2.html">Antifreeze</a></li>
+            <li><a href="lyrics_3.html">한시 오분(1:05)</a></li>
+        </ul>
+    </div>
+
+<div class="content2">
+    <section id = "section1">
+        <h1>Antifreeze</h1>
+        <img id="playBtn" src="image/앨범_201.jpg" width="400px" alt="재생 버튼">
+        <audio id="audioPlayer">
+            <source src="audio/음원_Antifreeze.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+    
+
+<!--  -->
+    <section id="section2">
+        <div id="container" class="hovring">
+            <ul>
+                <li>
+                    <span class="text1">우린 오래 전부터 어쩔 수 없는 거였어</span>
+                </li>
+                <li>
+                    <span class="text2">우주 속을 홀로 떠돌며 많이 외로워하다가</span>
+                </li>
+                <li>
+                    <span class="text3">어느 순간 태양과 달이 겹치게 될 때면</span>
+                </li>
+                <li>
+                    <span class="text4">모든 것을 이해할 수 있을 거야</span>
+                </li>
+                <li>
+                    <span class="text5">하늘에선 비만 내렸어 뼈 속까지 다 젖었어</span>
+                </li>
+                <li>
+                    <span class="text6">얼마 있다 비가 그쳤어 대신 눈이 내리더니</span>
+                </li>
+                <li>
+                    <span class="text7">영화서도 볼 수 없던 눈보라가 불 때</span>
+                </li>
+                <li>
+                    <span class="text8">너는 내가 처음 봤던 눈동자야</span>
+                </li>
+                <li>
+                    <span class="text9">낯 익은 거리들이 거울처럼 반짝여도</span>
+                </li>
+                <li>
+                    <span class="text10">니가 건네주는 커피 위에 살얼음이 떠도</span>
+                </li>
+                <li>
+                    <span class="text11">우리 둘은 얼어붙지 않을 거야</span>
+                </li>
+                <li>
+                    <span class="text12">바다 속의 모래까지 녹일 꺼야</span>
+                </li>
+                <li>
+                    <span class="text13">춤을 추며 절망이랑 싸울 꺼야</span>
+                </li>
+                <li>
+                    <span class="text14">얼어붙은 아스팔트 도시 위로</span>
+                </li>
+                <li>
+                    <span class="text15">숨이 막힐 거 같이 차가웠던 공기 속에</span>
+                </li>
+                <li>
+                    <span class="text16">너의 체온이 내게 스며들어 오고 있어</span>
+                </li>
+                <li>
+                    <span class="text17">우리 둘은 얼어붙지 않을 꺼야</span>
+                </li>
+                <li>
+                    <span class="text18">바다 속의 모래까지 녹일 꺼야</span>
+                </li>
+                <li>
+                    <span class="text19">춤을 추며 절망이랑 싸울 꺼야</span>
+                </li>
+                <li>
+                    <span class="text20">얼어붙은 아스팔트 도시 위로</span>
+                </li>
+                <li>
+                    <span class="text21">너와 나의 세대가 마지막이면 어떡해</span>
+                </li>
+                <li>
+                    <span class="text22">또 다른 빙하기가 찾아오면 어떡해</span>
+                </li>
+                <li>
+                    <span class="text23">긴 세월에 변하지 않을 그런 사랑은 없겠지만</span>
+                </li>
+                <li>
+                    <span class="text24">그 사랑을 기다려줄 그런 사람을 찾는 거야</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        Copyright ⓒ 2024 Sohyeon Jang, All Right Reserved <br>
+        고급웹퍼블리싱 직무수행능력평가1 D 22361090 장소현 ｜ shyssovl@gmail.com
+    </footer>
+
+
+
+<script>
+
+    document.getElementById('playBtn').addEventListener('click', () => {
+        let audio = document.getElementById('audioPlayer');
+        if (audio.paused) {
+            audio.play();
+            document.getElementById('playBtn').src = 'image/앨범_201_재생중.jpg'; // 재생 중일 때 이미지 변경
+        } else {
+            audio.pause();
+            audio.currentTime = 0;
+            document.getElementById('playBtn').src = 'image/앨범_201.jpg'; // 일시 정지 중일 때 이미지 변경
+        }
+    });
+        
+</script>
+    
+</body>
+</html>

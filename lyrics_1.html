@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF-8">
+    <title>lyrics</title>
+    <link rel="stylesheet" href="main.css">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'pretendard', sans-serif;
+}
+
+body {
+    cursor: url("image/커서1.png"), auto;
+}
+
+/* 좌측 메뉴 */
+.menu-lyrics {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 138px;
+    /* background-color: #f8f9fa;
+    border: 1px 1px 1px 0 solid #e9ecef; */
+    margin-top: 40px;
+}
+
+.menu1-lyrics ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.menu-lyrics ul li {
+    margin-bottom: 10px;
+}
+
+.menu-lyrics ul li a {
+    color: #212529;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.menu-lyrics ul li a:hover {
+    background-color: #e42d2d;
+    color: #ffffff;
+}
+
+
+
+/* 음악 */
+#section1 {
+    margin-top: -110px;
+}
+h1 {
+    padding: 0 0 40px 0;
+    font-size: 50px;
+}
+
+.content2 {
+    text-align: center;
+}
+.content2 img {
+    border-radius: 10px;
+}
+
+
+
+/* 가사 */
+#container {
+    margin: auto;
+    padding: 50px;
+}
+
+#container ul {
+    list-style: none;
+}
+
+#container ul li {
+    font-size: 25px;
+    display: block;
+    position: relative;
+    padding: 10px 20px 0 20px;
+    line-height: 1.7;
+}
+
+#section2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hovring ul:hover li span {
+    opacity: 0.3;
+}
+
+.hovring ul li:hover span {
+    opacity: 1;
+}
+
+
+/* 텍스트 호버 시 */
+
+.text1:hover {
+    color: #000000; 
+}
+.text2:hover {
+    color: #000000; 
+    font-style: italic;
+}
+.text3:hover {
+    color: #000000; 
+}
+.text4:hover {
+    color: #000000; 
+}
+.text5:hover {
+    color: #000000; 
+}
+.text6:hover {
+    color: #000000; 
+    font-weight: 700;
+}
+.text7:hover {
+    color: #9654ff; 
+}
+.text8:hover {
+    color: #000000; 
+}
+.text9:hover {
+    color: #000000; 
+}
+.text10:hover {
+    color: #000000; 
+    font-style: italic;
+}
+.text11:hover {
+    color: #000000; 
+}
+.text12:hover {
+    color: #000000; 
+    font-weight: 700;
+}
+.text13:hover {
+    color: #ff7979; 
+}
+.text14:hover {
+    color: #000000; 
+}
+.text15:hover {
+    color: #000000; 
+    font-style: italic;
+}
+.text16:hover {
+    color: #ff26c5; 
+    font-weight: 700;
+}
+.text17:hover {
+    color: #000000; 
+}
+.text18:hover {
+    color: #000000; 
+    font-weight: 700;
+}
+.text19:hover {
+    color: #000000; 
+}
+.text20:hover {
+    color: #a8fcff; 
+    font-weight: 700;
+}
+.text21:hover {
+    color: #000000; 
+}
+.text22:hover {
+    color: #000000;
+    font-style: italic; 
+}
+.text23:hover {
+    color: #54426c; 
+}
+.text24:hover {
+    color: #000000; 
+    font-weight: 700;
+}
+.text25:hover {
+    color: #ff5f5f; 
+}
+.text26:hover {
+    color: #000000; 
+}
+.text27:hover {
+    color: #000000; 
+}
+.text28:hover {
+    color: #000000; 
+    font-weight: 700;
+}
+.text29:hover {
+    color: #000000; 
+    font-style: italic;
+}
+.text30:hover {
+    color: #e3e62d; 
+    font-weight: 700;
+}
+.text31:hover {
+    color: #000000; 
+}
+
+
+</style>
+</head>
+
+<body>
+    <header> 
+        <a href="index.html">
+            <img src="image/커서1.jpg" width="50px" alt="Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="info.html">INFO</a></li>
+                <li><a href="album.html">ALBUM</a></li>
+                <li><a href="gallery2.html">GALLETY</a></li>
+                <li><a href="lyrics.html">LYRICS</a></li>
+                <li><a href="other.html">OTHER</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="menu-lyrics">
+        <ul>
+            <li><a href="lyrics.html">EVERYTHING</a></li>
+            <li><a href="lyrics_1.html">좋아해줘</a></li>
+            <li><a href="lyrics_2.html">Antifreeze</a></li>
+            <li><a href="lyrics_3.html">한시 오분(1:05)</a></li>
+        </ul>
+    </div>
+
+<div class="content2">
+    <section id = "section1">
+        <h1>좋아해줘</h1>
+        <img id="playBtn" src="image/앨범_201.jpg" width="400px" alt="재생 버튼">
+        <audio id="audioPlayer">
+            <source src="audio/음원_좋아해줘.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+    
+
+<!--  -->
+    <section id="section2">
+        <div id="container" class="hovring">
+            <ul>
+                <li>
+                    <span class="text1">날 좋아해줘</span>
+                </li>
+                <li>
+                    <span class="text2">아무런 조건 없이</span>
+                </li>
+                <li>
+                    <span class="text3">니 엄마 아니 아빠보다 더</span>
+                </li>
+                <li>
+                    <span class="text4">서울 아니면 뉴욕에서도</span>
+                </li>
+                <li>
+                    <span class="text5">어제 맞 찾아온 사춘기처럼</span>
+                </li>
+                <li>
+                    <span class="text6">내가 아플 땐 더욱 더</span>
+                </li>
+                <li>
+                    <span class="text7">나근대는 목소리로 속삭여야 해</span>
+                </li>
+                <li>
+                    <span class="text8">뜨거운 말로 내게 믿음을 줘</span>
+                </li>
+                <li>
+                    <span class="text9">그래도 내가 싫어진다면</span>
+                </li>
+                <li>
+                    <span class="text10">그건 아마 너의 잘못일 거야</span>
+                </li>
+                <li>
+                    <span class="text11">날 좋아해줘 월요일 아침에도</span>
+                </li>
+                <li>
+                    <span class="text12">내 옆에만 있어줄래</span>
+                </li>
+                <li>
+                    <span class="text13">오빠 날 잡아줘 날 감싸 안아줘</span>
+                </li>
+                <li>
+                    <span class="text14">니 피부 속으로 날 숨겨주겠니</span>
+                </li>
+                <li>
+                    <span class="text15">내가 아플 땐 더욱 더</span>
+                </li>
+                <li>
+                    <span class="text16">나근대는 목소리로 속삭여야 해</span>
+                </li>
+                <li>
+                    <span class="text17">뜨거운 말로 내게 믿음을 줘</span>
+                </li>
+                <li>
+                    <span class="text18">그래도 내가 싫어진다면</span>
+                </li>
+                <li>
+                    <span class="text19">그건 아마 너의 잘못일 거야</span>
+                </li>
+                <li>
+                    <span class="text20">baby now i really wanna know</span>
+                </li>
+                <li>
+                    <span class="text21">maybe now i really wanna know</span>
+                </li>
+                <li>
+                    <span class="text22">baby now i really wanna know</span>
+                </li>
+                <li>
+                    <span class="text23">maybe now i really wanna know</span>
+                </li>
+                <li>
+                    <span class="text24">내가 아플 땐 더욱 더</span>
+                </li>
+                <li>
+                    <span class="text25">나근대는 목소리로 속삭여야 해</span>
+                </li>
+                <li>
+                    <span class="text26">뜨거운 말로 내게 믿음을 줘</span>
+                </li>
+                <li>
+                    <span class="text27">그래도 내가 싫어진다면</span>
+                </li>
+                <li>
+                    <span class="text28">그건 아마 너의 잘못일 거야</span>
+                </li>
+                <li>
+                    <span class="text29">날 좋아해줘</span>
+                </li>
+                <li>
+                    <span class="text30">아무런 조건 없이</span>
+                </li>
+                <li>
+                    <span class="text31">니 엄마 아니 아빠보다 더</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        Copyright ⓒ 2024 Sohyeon Jang, All Right Reserved <br>
+        고급웹퍼블리싱 직무수행능력평가1 D 22361090 장소현 ｜ shyssovl@gmail.com
+    </footer>
+
+
+
+<script>
+
+    document.getElementById('playBtn').addEventListener('click', () => {
+        let audio = document.getElementById('audioPlayer');
+        if (audio.paused) {
+            audio.play();
+            document.getElementById('playBtn').src = 'image/앨범_201_재생중.jpg'; // 재생 중일 때 이미지 변경
+        } else {
+            audio.pause();
+            audio.currentTime = 0;
+            document.getElementById('playBtn').src = 'image/앨범_201.jpg'; // 일시 정지 중일 때 이미지 변경
+        }
+    });
+        
+</script>
+    
+</body>
+</html>
