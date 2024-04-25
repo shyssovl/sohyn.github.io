@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 좌측 메뉴 */
+.menu-other {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 138px;
+    /* background-color: #f8f9fa;
+border: 1px 1px 1px 0 solid #e9ecef; */
+    margin-top: 40px;
+}
+
+.menu1-other ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.menu-other ul li {
+    margin-bottom: 10px;
+}
+
+.menu-other ul li a {
+    color: #212529;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.menu-other ul li a:hover {
+    background-color: #e42d2d;
+    color: #ffffff;
+}
+
+.content1 {
+    text-align: center;
+}
+
+#section1 {
+    margin-top: -110px;
+}
+
+#section1 img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 3s ease;
+}
+
+#section1 img:hover {
+    transform: rotate(360deg);
+    /* 이미지를 360도 회전시킵니다. */
+}
+
+h1 {
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
+#line-spacing1 {
+    line-height: 1.8;
+
+}
+
+#section3 {
+    margin: 150px 0;
+    padding: 50px;
+    background-color: rgb(0, 0, 0);
+}
+
+#section4 {
+    text-align: center;
+}
+#section4 h1 {
+    font-size: 20px;
+}
+
+.album {
+    display: inline-block; /* 섹션 내부의 앨범을 인라인 블록으로 표시하여 가로로 배열합니다. */
+    margin: 0 auto; /* 왼쪽과 오른쪽 마진을 자동으로 설정하여 가운데 정렬합니다. */
+}
+.album img {
+    margin: 50px 50px 20px 50px ;
+    border-radius: 50%;
+    transition: transform 3s ease;
+}
+.album img:hover {
+    transform: rotate(360deg);
+    /* 이미지를 360도 회전시킵니다. */
+}
