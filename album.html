@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="=UTF-8">
+    <title>album</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* .album-header {
+            background-color: #333;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .album-header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        } */
+
+        /* .album-header p {
+            font-size: 18px;
+        } */
+
+        .album-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 40px;
+            margin-bottom: 150px;
+        }
+
+        .album-card {
+            width: 400px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease;
+            /* 애니메이션 효과를 위한 transition 속성 */
+        }
+
+        .album-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .album-card h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .album-card p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .album-card a.btn {
+            display: inline-block;
+            padding: 8px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .album-card a.btn:hover {
+            background-color: #555;
+        }
+
+        /* 마우스 호버 시 앨범 카드 확대 효과 */
+        /*.album-card:hover {
+            transform: scale(1.05);
+            /* 5% 확대 */
+            /*box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+        }*/
+
+        .btn {
+            display: inline-block;
+            padding: 8px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+
+
+        .album-slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch; /* 모바일에서 스와이프 스크롤 가능하도록 */
+        }
+
+        .album-controls {
+            display: flex;
+            align-items: center;
+            gap: 507px; 
+            margin: 90px 0 0 570px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        .album-controls button {
+            padding: 5px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .album-controls button:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+            
+    
+
+        /* 앨범 소개 */
+
+        .album-info img {
+            width: 200px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .album-info h1{
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+        .album-info p {
+            font-size: 20px;
+        }
+        .line-spacing1 {
+            line-height: 1.8;
+        }
+        .album1 {
+            padding: 70px 50px ;
+            background-color: #e42d2d;
+            color: #fff;
+            text-align: left;
+        }
+        .album2 {
+            padding: 70px 50px;
+            background-color: #ffffff;
+            color: #000000;
+            text-align: right;
+        }
+
+
+        /* 푸터 */
+        footer {
+            text-align: right;
+            color: #e42d2d;
+            margin-top: 200px;
+            border-top: solid 1.5px #e42d2d;
+            font-size: 15px;
+            height: 100px;
+            padding: 50px 30px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="image/커서1.jpg" width="50px" alt="Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="info.html">INFO</a></li>
+                <li><a href="album.html">ALBUM</a></li>
+                <li><a href="gallery2.html">GALLETY</a></li>
+                <li><a href="lyrics.html">LYRICS</a></li>
+                <li><a href="other.html">OTHER</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div class="album-controls">
+        <button onclick="prevAlbum()">◀</button>
+        <button onclick="nextAlbum()">▶</button>
+    </div>
+
+    <div class="album-content" id="albumSlider">
+
+        <div class="album-card">
+            <img src="image/앨범_201.jpg" alt="앨범 커버">
+            <h2>201 (Special Edition)</h2>
+            <p>발매일: 2010년 3월 18일</p>
+            <p>K-Pop</p>
+        </div>
+
+        <div class="album-card">                                                                          
+            <img src="image/앨범_Don't You Worry Baby.jpg" alt="앨범 커버">
+            <h2>Don't You Worry Baby (I'm Only Swimming)</h2>
+            <p>발매일: 2011년 7월 13일</p>
+            <p>K-Pop</p>
+        </div>
+
+        <div class="album-card">
+            <img src="image/앨범_TEAM BABY.jpg" alt="앨범 커버">
+            <h2>TEAM BABY</h2>
+            <p>발매일: 2017년 5월 30일</p>
+            <p>인디 록</p>
+        </div>
+
+        <div class="album-card">
+            <img src="image/앨범_THIRSTY.jpg" alt="앨범 커버">
+            <h2>THIRSTY</h2>
+            <p>발매일: 2019년 2월 12일</p>
+            <p>K-Pop</p> 
+        </div>
+
+        <div class="album-card">
+            <img src="image/앨범_TEEN TROUBLES.jpg" alt="앨범 커버">
+            <h2>TEEN TROUBLES</h2>
+            <p>발매일: 2022년 09월 15일</p>
+            <p>한국 록</p>
+        </div>
+    </div>
+
+
+
+    <div class="album-info">
+        <div class="album1">
+            <img src="image/앨범_201.jpg" alt="앨범 커버">
+            <h1>201 (Special Edition)</h1>
+            <p class="line-spacing1">지나칠 정도의 솔직함. 4차원 캐릭터, 뛰어난 음악적 센스로 무장한 아티스트 검정치마의 1집.<br>
+                로맨틱한 멜로디, 신랄하고 발칙한 유머, 빈티지와 모던을 아우른 감각적인 사운드로 리스너들을 단숨에 사로잡으며<br>
+                제7회 한국대중음악상 최우수 모던 록 음반상까지 거머쥔 2008년 최고의 센세이셔널한 화제작을<br>
+                보너스 트랙이 추가된 리마스터링 에디션으로 만나보자.
+            </p>
+        </div>
+        <div class="album2">
+            <img src="image/앨범_Don't You Worry Baby.jpg" alt="앨범 커버">
+            <h1>Don't You Worry Baby (I'm Only Swimming)</h1>
+            <p class="line-spacing1">
+                서구적인 한국 인디팝의 창시자. 천재 싱어송라이터 검정치마.<br>
+                첫 싱글로 내정된 "Love Shine"은 무심한 듯 내뱉는 특유의 보컬과 섬세한 멜로디가 동거하는 노래.<br>
+                코스모폴리탄으로서의 삶을 상징하는 듯 보이는 가사의 영롱한 곡 분위기가 은은한 압권을 형성하고 있는 이 러브 송은 격렬한 감정 과잉만이 최선인 줄 아는,<br>
+                기존 관념에 대한 안티테제로서 더없이 훌륭한 롤 모델을 제시해준다.<br>
+                보너스 트랙이 추가된 리마스터링 에디션으로 만나보자.
+            </p>
+        </div>
+        <div class="album1">
+            <img src="image/앨범_TEAM BABY.jpg" alt="앨범 커버">
+            <h1>TEAM BABY</h1>
+            <p class="line-spacing1">담백한 듯 섬세한 문체와 서정적인 멜로디로 써 내려간 일상 속 낭만.
+            </p>
+        </div>
+        <div class="album2">
+            <img src="image/앨범_THIRSTY.jpg" alt="앨범 커버">
+            <h1>THIRSTY</h1>
+            <p class="line-spacing1">인디 씬의 독보적 아이콘 검정치마. 사람이라서 겪는 일들과 그에 대한 이야기를 담은 앨범.<br>
+                조휴일은 'TEAM BABY'가 사랑 앨범이었다면 'THIRSTY'는 사람 앨범이라고 설명했다.<br>
+                "뻔뻔하고 그로테스크한 앨범을 만들고 싶었다"라는 그의 바람처럼 오직 조휴일만이 던질 수 있는 질문과 대답,<br>
+                솔직하고 발칙한 생각들로 가득한 새 앨범.<br>
+                검정치마의 감성을 갈구했던 팬들의 목마름을 말끔하게 씻어줄 것이다.
+            </p>
+        </div>
+        <div class="album1">
+            <img src="image/앨범_TEEN TROUBLES.jpg" alt="앨범 커버">
+            <h1>TEEN TROUBLES</h1>
+            <p class="line-spacing1">독보적인 감성으로 창의적인 도전을 이어가는 밴드 검정치마. 단편 영화와 함께 공개되는 새로운 앨범.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- <div class="album-content">
+        <div class="album">
+            <img src="image/앨범_201.jpg" alt="201" width="200px">
+            <h2>201</h2>
+            <p>지나칠 정도의 솔직함. 4차원 캐릭터, 뛰어난 음악적 센스로 무장한 아티스트 검정치마의 1집.
+                로맨틱한 멜로디, 신랄하고 발칙한 유머, 빈티지와 모던을 아우른 감각적인 사운드로 리스너들을 단숨에 사로잡으며
+                제7회 한국대중음악상 최우수 모던 록 음반상까지 거머쥔 2008년 최고의 센세이셔널한 화제작을
+                보너스 트랙이 추가된 리마스터링 에디션으로 만나보자.
+            </p>
+        </div>
+
+        <div class="album">
+            <img src="image/앨범_Don't You Worry Baby.jpg" alt="201" width="200px">
+            <h2>Don't You Worry Baby</h2>
+            <p>지나칠 정도의 솔직함. 4차원 캐릭터, 뛰어난 음악적 센스로 무장한 아티스트 검정치마의 1집.
+                로맨틱한 멜로디, 신랄하고 발칙한 유머, 빈티지와 모던을 아우른 감각적인 사운드로 리스너들을 단숨에 사로잡으며
+                제7회 한국대중음악상 최우수 모던 록 음반상까지 거머쥔 2008년 최고의 센세이셔널한 화제작을
+                보너스 트랙이 추가된 리마스터링 에디션으로 만나보자.
+            </p>
+        </div>
+
+        <div class="album">
+            <img src="image/앨범_201.jpg" alt="201" width="200px">
+            <h2>201</h2>
+            <p>설명 없음.
+            </p>
+        </div>
+
+        <div class="album">
+            <img src="image/앨범_TEAM BABY.jpg" alt="201" width="200px">
+            <h2>TEAM BABY</h2>
+            <p>담백한 듯 섬세한 문체와 서정적인 멜로디로 써 내려간 일상 속 낭만.
+            </p>
+        </div>
+
+        <div class="album">
+            <img src="image/앨범_THIRSTY.jpg" alt="201" width="200px">
+            <h2>THIRSTY</h2>
+            <p>인디 씬의 독보적 아이콘 검정치마. 사람이라서 겪는 일들과 그에 대한 이야기를 담은 앨범.
+                조휴일은 'TEAM BABY'가 사랑 앨범이었다면 'THIRSTY'는 사람 앨범이라고 설명했다.
+                "뻔뻔하고 그로테스크한 앨범을 만들고 싶었다"라는 그의 바람처럼 오직 조휴일만이 던질 수 있는 질문과 대답,
+                솔직하고 발칙한 생각들로 가득한 새 앨범.
+                검정치마의 감성을 갈구했던 팬들의 목마름을 말끔하게 씻어줄 것이다.
+            </p>
+        </div> -->
+
+
+
+
+
+        <!-- <div class="album">
+
+            <div class="text-container">
+                <p>지나칠 정도의 솔직함. 4차원 캐릭터, 뛰어난 음악적 센스로 무장한 아티스트 검정치마의 1집.
+                    로맨틱한 멜로디, 신랄하고 발칙한 유머, 빈티지와 모던을 아우른 감각적인 사운드로 리스너들을 단숨에 사로잡으며
+                    제7회 한국대중음악상 최우수 모던 록 음반상까지 거머쥔 2008년 최고의 센세이셔널한 화제작을
+                    보너스 트랙이 추가된 리마스터링 에디션으로 만나보자.
+                </p>
+            </div>
+        </div> -->
+
+
+
+    
+
+
+    <footer>
+        Copyright ⓒ Jang Sohyeon , All Right Reserved <br>
+        2024, Kaywon-Univercity 고급웹퍼블리싱 직무수행능력평가1 D 22361090 장소현 ｜ shyssovl@gmail.com
+    </footer>
+
+
+    <script>
+        let albumIndex = 0;
+        let albumCards = document.querySelectorAll('.album-card');
+        let albumSlider = document.getElementById('albumSlider');
+
+        function showAlbum(n) {
+            albumCards.forEach(card => {
+                card.style.display = 'none';
+            });
+            albumIndex += n;
+            if (albumIndex >= albumCards.length) {
+                albumIndex = 0;
+            }
+            if (albumIndex < 0) {
+                albumIndex = albumCards.length - 1;
+            }
+            albumCards[albumIndex].style.display = 'block';
+        }
+
+        showAlbum(albumIndex);
+
+        function nextAlbum() {
+            showAlbum(1);
+        }
+
+        function prevAlbum() {
+            showAlbum(-1);
+        }
+
+        setInterval(nextAlbum, 3000); // 5초마다 다음 앨범으로 넘어감
+    </script>
+
+
+
+</body>
+
+</html>
