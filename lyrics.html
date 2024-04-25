@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="main.css">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'pretendard', sans-serif;
+}
+
+body {
+    cursor: url("image/커서1.png"), auto;
+}
+
+/* 좌측 메뉴 */
+.menu-lyrics {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 138px;
+    /* background-color: #f8f9fa;
+    border: 1px 1px 1px 0 solid #e9ecef; */
+    margin-top: 40px;
+}
+
+.menu1-lyrics ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.menu-lyrics ul li {
+    margin-bottom: 10px;
+}
+
+.menu-lyrics ul li a {
+    color: #212529;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.menu-lyrics ul li a:hover {
+    background-color: #e42d2d;
+    color: #ffffff;
+}
+
+
+
+/* 음악 */
+#section1 {
+    margin-top: -110px;
+}
+h1 {
+    padding: 0 0 40px 0;
+    font-size: 50px;
+}
+
+.content2 {
+    text-align: center;
+}
+.content2 img {
+    border-radius: 10px;
+}
+
+
+
+/* 가사 */
+#container {
+    margin: auto;
+    padding: 50px;
+}
+
+#container ul {
+    list-style: none;
+}
+
+#container ul li {
+    font-size: 25px;
+    display: block;
+    position: relative;
+    padding: 10px 20px 0 20px;
+    line-height: 1.7;
+}
+
+#section2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hovring ul:hover li span {
+    opacity: 0.3;
+}
+
+.hovring ul li:hover span {
+    opacity: 1;
+}
+
+
+/* 텍스트 호버 시 */
+
+.text1:hover {
+    color: #000000; 
+}
+.text2:hover {
+    color: #60ffcd; 
+    font-weight: 700;
+}
+.text3:hover {
+    color: #000000; 
+}
+.text4:hover {
+    color: rgb(0, 0, 0); 
+}
+.text5:hover {
+    color: #000000; 
+}
+.text6:hover {
+    color: #000000; 
+    font-weight: 700;
+}
+.text7:hover {
+    color: #3eb388; 
+    font-weight: 700;
+}
+.text8:hover {
+    color: #000000; 
+}
+.text9:hover {
+    color: #000000; 
+}
+.text10:hover {
+    color: #000000; 
+}
+.text11:hover {
+    color: #000000; 
+}
+.text12:hover {
+    color: #ff68aa; 
+    font-weight: 700;
+}
+.text13:hover {
+    color: #ff3ca7; 
+    font-style: italic;
+}
+.text14:hover {
+    color: #000000; 
+}
+.text15:hover {
+    color: #000000; 
+}
+.text16:hover {
+    color: #000000; 
+    font-weight: 700;
+}
+
+
+</style>
+</head>
+
+<body>
+    <header> 
+        <a href="index.html">
+            <img src="image/커서1.jpg" width="50px" alt="Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="info.html">INFO</a></li>
+                <li><a href="album.html">ALBUM</a></li>
+                <li><a href="gallery2.html">GALLETY</a></li>
+                <li><a href="lyrics.html">LYRICS</a></li>
+                <li><a href="other.html">OTHER</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="menu-lyrics">
+        <ul>
+            <li><a href="lyrics.html">EVERYTHING</a></li>
+            <li><a href="lyrics_1.html">좋아해줘</a></li>
+            <li><a href="lyrics_2.html">Antifreeze</a></li>
+            <li><a href="lyrics_3.html">한시 오분(1:05)</a></li>
+        </ul>
+    </div>
+
+<div class="content2">
+    <section id = "section1">
+        <h1>EVERYTHING</h1>
+        <img id="playBtn" src="image/앨범_EVERYTHING.jpg" width="400px" alt="재생 버튼">
+        <audio id="audioPlayer">
+            <source src="audio/음원_EVERYTHING.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+    
+
+<!--  -->
+    <section id = "section2">
+        <div id="container" class="hovring">
+            <ul>
+                <li>
+                    <span class="text1">you are my everything my everything</span>
+                </li>
+                <li>
+                    <span class="text2">my everything</span>
+                </li>
+                <li>
+                    <span class="text3">you are my everything my everything</span>
+                </li>
+                <li>
+                    <span class="text4">비가 내리는 날엔</span>
+                </li>
+                <li>
+                    <span class="text5">우리 방 안에 누워 아무 말이 없고</span>
+                </li>
+                <li>
+                    <span class="text6">감은 눈을 마주 보면</span>
+                </li>
+                <li>
+                    <span class="text7">모든 게 우리 거야</span>
+                </li>
+                <li>
+                    <span class="text8">조금 핼쑥한 얼굴로 날 찾아올 때도</span>
+                </li>
+                <li>
+                    <span class="text9">가끔 발칙한 얘기로 날 놀랠킬 때도</span>
+                </li>
+                <li>
+                    <span class="text10">you are my everything my everything</span>
+                </li>
+                <li>
+                    <span class="text11">my everything</span>
+                </li>
+                <li>
+                    <span class="text12">you are my everything my everything</span>
+                </li>
+                <li>
+                    <span class="text13">넌 내 모든 거야</span>
+                </li>
+                <li>
+                    <span class="text14">내 여름이고</span>
+                </li>
+                <li>
+                    <span class="text15">내 꿈이야넌 내 모든거야</span>
+                </li>
+                <li>
+                    <span class="text16">나 있는 그대로 받아줄게요</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        Copyright ⓒ 2024 Sohyeon Jang, All Right Reserved <br>
+        고급웹퍼블리싱 직무수행능력평가1 D 22361090 장소현 ｜ shyssovl@gmail.com
+    </footer>
+
+
+
+<script>
+
+    document.getElementById('playBtn').addEventListener('click', () => {
+        let audio = document.getElementById('audioPlayer');
+        if (audio.paused) {
+            audio.play();
+            document.getElementById('playBtn').src = 'image/앨범_EVERYTHING_재생중.jpg'; // 재생 중일 때 이미지 변경
+        } else {
+            audio.pause();
+            audio.currentTime = 0;
+            document.getElementById('playBtn').src = 'image/앨범_EVERYTHING.jpg'; // 일시 정지 중일 때 이미지 변경
+        }
+    });
+        
+</script>
+    
+</body>
+</html>

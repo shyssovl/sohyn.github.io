@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="=UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'pretendard', sans-serif;
+        }
+
+        /* 이미지 호버 */
+        .rotate-on-hover {
+            transition: transform 0.5s ease;
+        }
+
+        .rotate-on-hover:hover {
+            transform: rotate(-15deg);
+        }
+
+        /*  content1 */
+        .content1 {
+            margin: 70px 0 0 100px;
+            padding: 100px;
+            color: #e42d2d;
+        }
+
+        .content1 h1 {
+            padding-top: 20px;
+        }
+
+        .content1 li {
+            font-size: 20px;
+        }
+
+        .contact-info {
+            list-style-type: none;
+            /* 리스트 스타일 제거 */
+            padding-top: 140px;
+            margin: 0;
+            display: block;
+            /* 기본 값은 이미 block이지만 명시적으로 지정 */
+        }
+
+        .contact-info li {
+            margin-bottom: 0.85rem;
+            /* 리스트 항목 간격 설정 */
+        }
+
+        .text-bold {
+            font-weight: 800;
+        }
+
+        .text img {
+            float: left;
+            /* 사진을 왼쪽으로 부유시킵니다. */
+            margin-right: 130px;
+            /* 사진과 텍스트 간격 조정 */
+        }
+
+
+        /* 콘텐츠3 - 그가 검정치마인 이유 */
+        .content3 {
+            text-align: right;
+            margin: 300px 100px 0 0;
+            border-right: 3px solid black;
+        }
+
+        .content3 h1 {
+            font-size: 70px;
+            padding-bottom: 100px;
+            padding-right: 40px;
+        }
+
+        .content3 p {
+            padding-right: 40px;
+            font-size: 18px;
+        }
+
+        .line-spacing {
+            line-height: 3.8;
+            /* 행간을 조절합니다. */
+        }
+
+        /* 콘텐츠4 - 그가 검정치마인 이유 */
+        .content4 {
+            text-align: left;
+            margin: 300px 0 0 100px;
+            border-left: 3px solid black;
+        }
+
+        .content4 h1 {
+            font-size: 70px;
+            padding-bottom: 100px;
+            padding-left: 40px;
+        }
+
+        .content4 img {
+            padding: 20px 0 60px 40px;
+        }
+
+        .content4 img:hover {
+            content: url('image/조휴일_엘르화보2_호버시.jpg');
+        }
+
+        .content4 p {
+            padding-left: 40px;
+            font-size: 18px;
+        }
+
+        .content4 .text-bold {
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        .line-spacing1 {
+            line-height: 1.8;
+            /* 행간을 조절합니다. */
+            padding-top: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="image/커서1.jpg" width="50px" alt="Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="info.html">INFO</a></li>
+                <li><a href="album.html">ALBUM</a></li>
+                <li><a href="gallery2.html">GALLETY</a></li>
+                <li><a href="lyrics.html">LYRICS</a></li>
+                <li><a href="other.html">OTHER</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="content1">
+            <div class="text">
+                <img class="rotate-on-hover" src="image/인포_프로필 이미지.webp" width="500px">
+                <h1>조휴일 (@holideez)</h1>
+                <ul class="contact-info">
+                    <li><span class="text-bold">밴드</span>&nbsp; : &nbsp;&nbsp;검정치마</li>
+                    <li><span class="text-bold">국적</span>&nbsp; : &nbsp;&nbsp;미국</li>
+                    <li><span class="text-bold">본명</span>&nbsp; : &nbsp;&nbsp;Bryan Cho</li>
+                    <li><span class="text-bold">한국명</span> &nbsp; : &nbsp;&nbsp;조휴일</li>
+                    <li><span class="text-bold">생년월일</span> &nbsp; : &nbsp;&nbsp;1982.12.05</li>
+                    <li><span class="text-bold">나이</span> &nbsp; : &nbsp;&nbsp;만 42세</li>
+                    <li><span class="text-bold">MBTI</span> &nbsp; :&nbsp; &nbsp;INFP</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="content3">
+        <h1>조휴일이 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"검정치마"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;가 된 이유</h1>
+        <p class="line-spacing">- 그저 어감이 좋아서,<br>
+            (조휴일 답다.)</p>
+    </div>
+
+    <div class="content4">
+        <h1>조휴일, ELLE 인터뷰 中</h1>
+        <img src="image/조휴일_엘르화보2.jpg">
+        <p class="line-spacing"><span class="text-bold">- 사랑이 긍정적이고 아름다운 것임을 말할 수 있는 사람이란 건 알 수 있어요.</span><br></p>
+        <p class="line-spacing1">
+            전반적으로 예술가들이 하는 일은 감정을 확대해서 표현하는 일이에요.<br>
+            조그만 상처라도 그걸 헤집고 덧나게 만들어서 남에게 보여주고,
+            아주 작은 행복을 대할 때도 격렬하고 열정적으로 춤추는 거죠.<br>
+            제 사랑이라고 남의 사랑보다 더 특별하지 않아요.
+            하지만 지극히 개인적인 기억에 음악이 더해지면, 사람들은 각자의 이유로 공감하고 위안을 받죠.
+        </p>
+    </div>
+
+    <footer>
+        Copyright ⓒ 2024 Sohyeon Jang, All Right Reserved <br>
+        고급웹퍼블리싱 직무수행능력평가1 D 22361090 장소현 ｜ shyssovl@gmail.com
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="=UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .title {
+            font-size: 150px;
+            font-weight: 800;
+            padding: 300px 0 0 30px;
+            color: #e42d2d;
+            cursor: pointer; /* 마우스 커서를 포인터로 변경하여 클릭 가능한 상태로 표시합니다. */
+        }
+
+        #blink {
+            animation: blink-animation 1s infinite; /* 깜빡임 애니메이션 적용 */
+        }
+
+        @keyframes blink-animation {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="image/커서1.jpg" width="50px" alt="Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="info.html">INFO</a></li>
+                <li><a href="album.html">ALBUM</a></li>
+                <li><a href="gallery2.html">GALLETY</a></li>
+                <li><a href="lyrics.html">LYRICS</a></li>
+                <li><a href="other.html">OTHER</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="title" onclick="goToInfoPage()">
+        <p id="blink">검정치마,<br>
+            그가 궁금하다...★</p>
+    </div>
+
+
+
+    <footer>
+            Copyright ⓒ Jang Sohyeon , All Right Reserved <br>
+            2024, Kaywon-Univercity 고급웹퍼블리싱 직무수행능력평가1 D 22361090 장소현 ｜ shyssovl@gmail.com
+    </footer>
+
+
+
+
+
+
+    <script>
+        function goToInfoPage() {
+            window.location.href = "info.html"; // info.html 페이지로 이동
+        }
+
+        // 텍스트 깜빡임 효과를 주는 JavaScript 코드
+        setInterval(function() {
+            var blinkElement = document.getElementById('blink');
+            blinkElement.style.visibility = (blinkElement.style.visibility == 'hidden' ? '' : 'hidden');
+        }, 1000); // 0.5초마다 깜빡임 효과 적용
+
+
+    </script>
+</body>
+
+</html>
